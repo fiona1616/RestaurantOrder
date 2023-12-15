@@ -21,9 +21,12 @@ struct Request: Codable, Identifiable {
     let price: Int
 }
 
-struct Order: Codable{
+struct Order: Codable, Identifiable{
+    var id = UUID() // Provide a unique identifier for each Order
     let food: Request
     var quantity: Int
+    
+    static let dummyData = Order(food: Request(id: 1, name: "buffalo", imageURL: "asd", price: 5000), quantity: 3)
 }
 
 
@@ -32,5 +35,9 @@ class OrderData: ObservableObject{
     
     init(order: [Order]) {
         self.order = order
+    }
+    
+    func getTotal() -> Int {
+        return order.reduce(0) { $0 + ($1.quantity * $1.food.price) }
     }
 }

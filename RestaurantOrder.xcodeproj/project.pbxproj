@@ -16,6 +16,11 @@
 		699E092E2B2AE2F200DB26D3 /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 699E09102B2ADDDE00DB26D3 /* food.json */; };
 		699E09322B2AE74700DB26D3 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E09312B2AE74700DB26D3 /* FoodListCell.swift */; };
 		699E09342B2AEC5300DB26D3 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E09332B2AEC5300DB26D3 /* FoodDetailView.swift */; };
+		699E09372B2BF2A200DB26D3 /* OrderSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E09362B2BF2A200DB26D3 /* OrderSummaryView.swift */; };
+		699E09392B2BF2B800DB26D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E09382B2BF2B800DB26D3 /* MainView.swift */; };
+		699E093B2B2BF55700DB26D3 /* OrderSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E093A2B2BF55700DB26D3 /* OrderSummaryCell.swift */; };
+		699E093F2B2BFC2200DB26D3 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E093E2B2BFC2200DB26D3 /* TotalView.swift */; };
+		699E09432B2C097000DB26D3 /* TabSelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E09422B2C097000DB26D3 /* TabSelectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		699E09122B2ADEAE00DB26D3 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		699E09312B2AE74700DB26D3 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
 		699E09332B2AEC5300DB26D3 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		699E09362B2BF2A200DB26D3 /* OrderSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryView.swift; sourceTree = "<group>"; };
+		699E09382B2BF2B800DB26D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		699E093A2B2BF55700DB26D3 /* OrderSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryCell.swift; sourceTree = "<group>"; };
+		699E093E2B2BFC2200DB26D3 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		699E09422B2C097000DB26D3 /* TabSelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSelectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 				699E09032B2AA5A100DB26D3 /* Assets.xcassets */,
 				699E09052B2AA5A100DB26D3 /* Preview Content */,
 				699E09102B2ADDDE00DB26D3 /* food.json */,
+				699E09422B2C097000DB26D3 /* TabSelectionManager.swift */,
 			);
 			path = RestaurantOrder;
 			sourceTree = "<group>";
@@ -102,6 +113,10 @@
 				699E09012B2AA59F00DB26D3 /* FoodListView.swift */,
 				699E09312B2AE74700DB26D3 /* FoodListCell.swift */,
 				699E09332B2AEC5300DB26D3 /* FoodDetailView.swift */,
+				699E09362B2BF2A200DB26D3 /* OrderSummaryView.swift */,
+				699E093A2B2BF55700DB26D3 /* OrderSummaryCell.swift */,
+				699E09382B2BF2B800DB26D3 /* MainView.swift */,
+				699E093E2B2BFC2200DB26D3 /* TotalView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,11 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699E093B2B2BF55700DB26D3 /* OrderSummaryCell.swift in Sources */,
+				699E093F2B2BFC2200DB26D3 /* TotalView.swift in Sources */,
 				699E090F2B2ADDC500DB26D3 /* FoodMenu.swift in Sources */,
+				699E09432B2C097000DB26D3 /* TabSelectionManager.swift in Sources */,
+				699E09392B2BF2B800DB26D3 /* MainView.swift in Sources */,
 				699E09022B2AA59F00DB26D3 /* FoodListView.swift in Sources */,
 				699E09002B2AA59F00DB26D3 /* RestaurantOrderApp.swift in Sources */,
 				699E09132B2ADEAE00DB26D3 /* MenuViewModel.swift in Sources */,
 				699E09322B2AE74700DB26D3 /* FoodListCell.swift in Sources */,
+				699E09372B2BF2A200DB26D3 /* OrderSummaryView.swift in Sources */,
 				699E09342B2AEC5300DB26D3 /* FoodDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

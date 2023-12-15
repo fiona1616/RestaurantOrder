@@ -10,10 +10,13 @@ import SwiftUI
 @main
 struct RestaurantOrderApp: App {
     let orderData = OrderData(order: [])
+    @StateObject var tabSelectionManager = TabSelectionManager()
+
     var body: some Scene {
         WindowGroup {
-            FoodListView()
+            MainView()
                 .environmentObject(orderData)
+                .environmentObject(tabSelectionManager)
         }
     }
 }

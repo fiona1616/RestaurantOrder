@@ -22,7 +22,7 @@ struct FoodListView: View {
                             selectedFood = food
                         }
                 }
-                .navigationTitle("🥘 Food List")
+                .navigationTitle("🥘 Food Mania")
             }
             .blur(radius: isShowingDetail ? 15 : 0)
             
